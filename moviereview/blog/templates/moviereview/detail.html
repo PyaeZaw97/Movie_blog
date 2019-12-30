@@ -1,0 +1,9 @@
+{% if review %}
+    <ul>
+    {% for review_detail in review %}
+        <li>{{ review_detail.genre }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
